@@ -2,7 +2,8 @@
 
 ## Project Description
 
-If you want to upload multiple files to server and you want to do is without using "html's submit button" but from "javascript's DOM", this project is for you. In this project, the main point is when we send the "POST" request to server, how we going to pack the files.
+If you want to upload multiple files to server and you want to do is without using "html's submit button"/
+but from "javascript's DOM", this project is for you. In this project, the main point is when we send the "POST" request to server, how we going to pack the files.
 
 ### Tech
 
@@ -27,8 +28,9 @@ some HTML code
 </form>
 ```
 
-Mostly we just think to take the "file input" and send as request's body. Like this
-<span style="color:red">wrong code</span>
+Mostly we just think to take the "file input" and send as request's body. Like this/
+
+wrong code`#FF0000`
 
 ```
 const filesInput = document.getElementById("files");
@@ -44,8 +46,10 @@ const uploadFiles = async () => {
 
 If you send like above, the payload will be like this. So this is not working.
 ![wrong payload](<./public/Screenshot%20(71).png>)
+/
 
-So we have to create formData. To create a formData we don't need to use "input tag". We are going to use "form tag". and we send the formData as request's body
+So we have to create formData. To create a formData we don't need to use "input tag". We are going to use "form tag". and we send the formData as request's body.
+Right code`#00FF00`
 
 ```
 const form = document.getElementById("form");
